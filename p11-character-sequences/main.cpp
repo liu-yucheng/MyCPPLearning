@@ -6,7 +6,7 @@
 
 using namespace std;
 
-int main() {
+int main(int argc, char **argv) {
     // Use character arrays
     char str1[5] = "str1";
     cout << "main: str1: \"" << str1 << "\"" << endl;
