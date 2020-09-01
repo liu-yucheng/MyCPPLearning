@@ -1,4 +1,4 @@
-/* http://www.cplusplus.com/doc/tutorial/functions2
+/* Ref: http://www.cplusplus.com/doc/tutorial/functions2
  * A program that shows the usage of C++ function overloads and templates. */
 
 #include <iostream>

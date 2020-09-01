@@ -1,5 +1,5 @@
-/* http://www.cplusplus.com/doc/tutorial/ntcs/
- * A program that shows the usage of character sequences. */
+/* Ref: http://www.cplusplus.com/doc/tutorial/ntcs/
+ * A program that shows the usage of C++ character sequences. */
 
 #include <iostream>
 #include <string>

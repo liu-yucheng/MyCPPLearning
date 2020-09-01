@@ -1,4 +1,4 @@
-/* http://www.cplusplus.com/doc/tutorial/functions/
+/* Ref: http://www.cplusplus.com/doc/tutorial/functions/
  * A program that shows the usage of C++ functions. */
 
 #include <iostream>

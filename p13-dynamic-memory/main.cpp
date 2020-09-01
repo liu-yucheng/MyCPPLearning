@@ -1,5 +1,5 @@
-/* http://www.cplusplus.com/doc/tutorial/dynamic/
- * A program that shows the usage of dynamic memory. */
+/* Ref: http://www.cplusplus.com/doc/tutorial/dynamic/
+ * A program that shows the usage of C++ dynamic memory. */
 
 #include <iostream>
 

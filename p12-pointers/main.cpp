@@ -1,5 +1,5 @@
-/* http://www.cplusplus.com/doc/tutorial/pointers
- * A program that shows the usage of pointers. */
+/* Ref: http://www.cplusplus.com/doc/tutorial/pointers
+ * A program that shows the usage of C++ pointers. */
 
 #include <iostream>
 #include <string>

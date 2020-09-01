@@ -1,4 +1,4 @@
-/* http://www.cplusplus.com/doc/tutorial/namespaces/
+/* Ref: http://www.cplusplus.com/doc/tutorial/namespaces/
  * A program that shows the usage of C++ name visibility. */
 
 #include <iostream>

@@ -1,4 +1,4 @@
-/* http://www.cplusplus.com/doc/tutorial/arrays 
+/* Ref: http://www.cplusplus.com/doc/tutorial/arrays 
  * A program that shows the usage of C++ arrays. */
 
 #include <array>

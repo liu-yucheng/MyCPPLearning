@@ -1,4 +1,4 @@
-/* http://www.cplusplus.com/doc/tutorial/structures/
+/* Ref: http://www.cplusplus.com/doc/tutorial/structures/
  * A program that shows the usage of C++ data structures. */
 
 #include <iostream>
