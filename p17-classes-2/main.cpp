@@ -1,6 +1,10 @@
 /* Ref: http://www.cplusplus.com/doc/tutorial/templates/
- * A program that shows the usage of C++ classes. This is part 2 of 2. 
- * NOTE: This program does not show the use of const inside classes. */
+ * A program that shows the usage of C++ classes.
+ * This is part 2 of 2.
+ * 
+ * <<<< NOTE >>>>
+ * This program covers NOT the usage of "const" keyword inside classes.
+ * This program has about 300 lines, which is longer than expected. */
 
 #include <iostream>
 #include <string>
@@ -131,6 +135,110 @@ string Vector2D::strRepr() {
     return result;
 }
 
+// Declare class templates
+template <class T>
+class Wrap {
+   private:
+    // Declare internal states
+    T valState;
+
+   public:
+    // Declare constructors
+    Wrap(T);
+
+    // Declare field access methods
+    T val();
+    T val(T);
+
+    // Declare other methods
+    string strRepr();
+};
+
+// Implement class template methods
+template <class T>
+Wrap<T>::Wrap(T val) {
+    valState = val;
+}
+
+template <class T>
+T Wrap<T>::val() {
+    return valState;
+}
+
+template <class T>
+T Wrap<T>::val(T newVal) {
+    T oldVal = valState;
+    valState = newVal;
+    return oldVal;
+}
+
+template <class T>
+string Wrap<T>::strRepr() {
+    string result = "{ val:" + to_string(valState) + " }";
+    return result;
+}
+
+// Declare specialized class templates
+template <>
+class Wrap<char> {
+   private:
+    char valState;
+
+   public:
+    Wrap(char);
+
+    char val();
+    char val(char);
+
+    char makeLower();
+    char makeUpper();
+
+    string strRepr();
+};
+
+Wrap<char>::Wrap(char val) {
+    valState = val;
+}
+
+char Wrap<char>::val() {
+    return valState;
+}
+
+char Wrap<char>::val(char newVal) {
+    char oldVal = valState;
+    valState = newVal;
+    return valState;
+}
+
+char Wrap<char>::makeLower() {
+    if (valState >= 'A' && valState <= 'Z') {
+        char caseDiff = 'a' - 'A';
+        char oldVal = valState;
+        valState += caseDiff;
+        return oldVal;
+    } else {
+        return valState;
+    }
+}
+
+char Wrap<char>::makeUpper() {
+    if (valState >= 'a' && valState <= 'z') {
+        char caseDiff = 'A' - 'a';
+        char oldVal = valState;
+        valState += caseDiff;
+        return oldVal;
+    } else {
+        return valState;
+    }
+}
+
+string Wrap<char>::strRepr() {
+    string result = "{ val: ";
+    result += valState;
+    result += " }";
+    return result;
+}
+
 // <<<< Main method >>>>
 int main(int argc, char **argv) {
     Vector2D *ptr1, *ptr2, *ptr3, *ptr4, *ptr5;
@@ -162,6 +270,29 @@ int main(int argc, char **argv) {
     delete ptr1;
     delete ptr2;
     delete ptr5;
+
+    Wrap<int> *ptr6 = new Wrap<int>(0);
+    cout << "main: ptr6: *Wrap<int> " << ptr6->strRepr() << endl;
+
+    int var3 = ptr6->val();
+    var3 += 1;
+    ptr6->val(var3);
+    cout << "main: ptr6: *Wrap<int> " << ptr6->strRepr() << endl;
+
+    Wrap<char> *ptr7 = new Wrap<char>('y');
+    cout << "main: ptr7: *Wrap<char> " << ptr7->strRepr() << endl;
+
+    ptr7->makeUpper();
+    cout << "main: ptr7: *Wrap<char> " << ptr7->strRepr() << endl;
+
+    ptr7->val('X');
+    cout << "main: ptr7: *Wrap<char> " << ptr7->strRepr() << endl;
+
+    ptr7->makeLower();
+    cout << "main: ptr7: *Wrap<char> " << ptr7->strRepr() << endl;
+
+    delete ptr6;
+    delete ptr7;
 
     return EXIT_SUCCESS;
 }
