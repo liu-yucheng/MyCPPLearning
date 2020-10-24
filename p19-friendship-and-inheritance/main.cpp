@@ -58,19 +58,9 @@ string Rect::strRepr() {
 // Implement Rect friend functions
 void rotate90(Rect &target) {
     // Friend functions are not members but they can access private members
-    // (Artistically) swap width and height
-    // NOTE: DO NOT WRITE CODE IN THIS WAY IN PRODUCTION ENVIRONMENT
-    // clang-format off
-    target.widthState = (float)(
-        (long)target.widthState ^ (long)target.heightState
-    );
-    target.heightState = (float)(
-        (long)target.widthState ^ (long)target.heightState
-    );
-    target.widthState = (float)(
-        (long)target.widthState ^ (long)target.heightState
-    );
-    // clang-format on
+    float temp = target.widthState;
+    target.widthState = target.heightState;
+    target.heightState = temp;
 }
 
 class ParalGram {
