@@ -1,9 +1,11 @@
 # MyCPPLearning
 
+## Intro
+
 Code I have written or reviewed while I am learning C++.
 
-Main content completed on 30 Oct 2020, UTC.
+Main contents completed on 30 Oct 2020, UTC.
 
-# References
+## References
 
 1. http://www.cplusplus.com/doc/tutorial/
