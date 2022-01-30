@@ -1,6 +1,9 @@
 /* Ref: http://www.cplusplus.com/doc/tutorial/control/
  * A program that shows the usage of C++ flow control. */
 
+/* Copyright 2022 Yucheng Liu. GNU GPL3 license.
+ * GNU GPL3 license copy: https://www.gnu.org/licenses/gpl-3.0.txt */
+
 #include <iostream>
 #include <string>
 

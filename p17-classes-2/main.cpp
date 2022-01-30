@@ -6,6 +6,9 @@
  * This program covers NOT the usage of "const" keyword inside classes.
  * This program has about 300 lines, which is longer than expected. */
 
+/* Copyright 2022 Yucheng Liu. GNU GPL3 license.
+ * GNU GPL3 license copy: https://www.gnu.org/licenses/gpl-3.0.txt */
+
 #include <iostream>
 #include <string>
 
