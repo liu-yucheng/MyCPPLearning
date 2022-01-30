@@ -1,6 +1,9 @@
 /* Ref: http://www.cplusplus.com/doc/tutorial/exceptions/
  * A program that shows the usage of C++ exception handling. */
 
+/* Copyright 2022 Yucheng Liu. GNU GPL3 license.
+ * GNU GPL3 license copy: https://www.gnu.org/licenses/gpl-3.0.txt */
+
 #include <iostream>
 #include <string>
 

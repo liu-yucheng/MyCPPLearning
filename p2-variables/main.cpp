@@ -3,6 +3,9 @@
  * A program that shows the initialization and mutation of variables of
  * primitive types. */
 
+/* Copyright 2022 Yucheng Liu. GNU GPL3 license.
+ * GNU GPL3 license copy: https://www.gnu.org/licenses/gpl-3.0.txt */
+
 #include <iostream>
 
 using namespace std;
