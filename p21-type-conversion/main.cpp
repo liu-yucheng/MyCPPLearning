@@ -1,6 +1,9 @@
 /* Ref: http://www.cplusplus.com/doc/tutorial/typecasting/
  * A program that shows the usage of C++ type conversion. */
 
+/* Copyright 2022 Yucheng Liu. GNU GPL3 license.
+ * GNU GPL3 license copy: https://www.gnu.org/licenses/gpl-3.0.txt */
+
 #include <iostream>
 #include <string>
 #include <typeinfo>
