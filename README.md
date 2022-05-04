@@ -15,7 +15,7 @@ All sections are completed on 30 Oct 2020, UTC.
 
 **Note:** References are in the IEEE style. The IEEE style guide is available at https://ieeeauthorcenter.ieee.org/wp-content/uploads/IEEE-Reference-Guide.pdf.
 
-**[1]** "C-Plus-Plus Language Tutorial." C-Plus-Plus.com. http://www.cplusplus.com/doc/tutorial/ (Accessed May 5, 2022)
+**[1]** "C-Plus-Plus Language Tutorial." cplusplus.com. http://www.cplusplus.com/doc/tutorial/ (accessed May 5, 2022).
 
 # Miscellaneous
 ## Versioning
