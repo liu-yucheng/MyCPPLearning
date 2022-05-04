@@ -9,11 +9,13 @@ GNU GPL3 license copy: https://www.gnu.org/licenses/gpl-3.0.txt
 
 Code I have written or reviewed while I am learning C++.
 
-All sections completed on 30 Oct 2020, UTC.
+All sections are completed on 30 Oct 2020, UTC.
 
 # References
 
-1. http://www.cplusplus.com/doc/tutorial/
+**Note:** References are in the IEEE style. The IEEE style guide is available at https://ieeeauthorcenter.ieee.org/wp-content/uploads/IEEE-Reference-Guide.pdf.
+
+**[1]** "C-Plus-Plus Language Tutorial." C-Plus-Plus.com. http://www.cplusplus.com/doc/tutorial/ (Accessed May 5, 2022)
 
 # Miscellaneous
 ## Versioning
